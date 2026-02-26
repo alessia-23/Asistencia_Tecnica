@@ -5,6 +5,8 @@ import cors from 'cors';
 // Importación de rutas
 import authRoutes from './routes/authRoutes.js';
 import clienteRoutes from './routes/clienteRoutes.js'
+import tecnicoRoutes from './routes/tecnicoRoutes.js'
+
 // Inicialización
 const app = express();
 
@@ -21,6 +23,7 @@ res.send('Server on');
 // Rutas
 app.use('/api/auth', authRoutes);
 app.use('/api/clientes',clienteRoutes)
+app.use('/api/tecnicos',tecnicoRoutes)
 
 // Exportar app
 export default app;
