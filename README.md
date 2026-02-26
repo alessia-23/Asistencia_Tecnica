@@ -12,7 +12,8 @@ Este proyecto fue completado por las siguientes integrantes:
 ## 🖼️ Estructura de las colecciones del proyecto 
 
 | **Visualización** |
-<img width="1063" height="483" alt="image" src="https://github.com/user-attachments/assets/a2d9d393-d9ff-4962-88db-0b39e486febc" />
+| <img width="1063" height="483" alt="image" src="https://github.com/user-attachments/assets/2c9ceb80-d9ae-41fe-a193-44aeb58490e2" /> |
+
 
 
 
