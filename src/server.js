@@ -2,6 +2,9 @@
 import express from 'express';
 import cors from 'cors';
 
+// Importación de rutas
+import authRoutes from './routes/authRoutes.js';
+
 // Inicialización
 const app = express();
 
@@ -14,6 +17,9 @@ app.use(cors());
 app.get('/', (req, res) => {
 res.send('Server on');
 });
+
+// Rutas
+app.use('/api/auth', authRoutes);
 
 // Exportar app
 export default app;
