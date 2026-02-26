@@ -12,8 +12,12 @@ import ticketRoutes from './routes/ticketRoutes.js'
 const app = express();
 
 // Middlewares
+app.use(cors({
+    origin: '*', 
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json());
-app.use(cors());
 
 
 // Ruta de prueba
@@ -26,6 +30,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/clientes',clienteRoutes)
 app.use('/api/tecnicos',tecnicoRoutes)
 app.use('/api/tickets',ticketRoutes)
+const PORT = process.env.PORT || 3000;
 
 // Exportar app
 export default app;
